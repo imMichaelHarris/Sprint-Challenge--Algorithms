@@ -96,8 +96,13 @@ class SortingRobot:
         """
         Sort the robot's list.
         """
+        # First thought was selection sort but if the robot can only compare with the item in front of him it sounds like we need bublle sort
+        # Loop through list move robot and compare item. If item is bigger swap item
+        # Feels like I should use the light to indicate if sorting is done
         # Fill this out
-        pass
+        for i in range(len(l) + 1):
+            print("length", i, compare_item())
+            swap_item()
 
 
 if __name__ == "__main__":
